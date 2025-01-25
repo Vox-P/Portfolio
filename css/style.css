@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'JetBrains Mono', monospace;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: url(../assets/img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+header .dock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(24, 24, 24, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: white;
+}
+
+header .dock nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .dock nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header .dock nav .links a {
+  color: #777;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+header .dock nav .links a::after {
+  content: '';
+  position: absolute;
+  background: #aaa;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -2px;
+  transition: all 0.2s ease-in-out;
+}
+
+header .dock nav .links a:hover {
+  color: #aaa;
+}
+
+header .dock nav .links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+header nav button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background: rgba(24, 24, 24, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+header nav button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #aaa;
+}
